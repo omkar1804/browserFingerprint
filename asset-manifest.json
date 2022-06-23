@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.073c9b0a.css",
-    "main.js": "/react-gh-pages/static/js/main.19501212.js",
-    "static/js/787.28cb0dcd.chunk.js": "/react-gh-pages/static/js/787.28cb0dcd.chunk.js",
-    "static/media/logo.svg": "/react-gh-pages/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/react-gh-pages/index.html",
-    "main.073c9b0a.css.map": "/react-gh-pages/static/css/main.073c9b0a.css.map",
-    "main.19501212.js.map": "/react-gh-pages/static/js/main.19501212.js.map",
-    "787.28cb0dcd.chunk.js.map": "/react-gh-pages/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/browserFingerprint/static/css/main.073c9b0a.css",
+    "main.js": "/browserFingerprint/static/js/main.92482f69.js",
+    "static/js/787.28cb0dcd.chunk.js": "/browserFingerprint/static/js/787.28cb0dcd.chunk.js",
+    "static/media/logo.svg": "/browserFingerprint/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/browserFingerprint/index.html",
+    "main.073c9b0a.css.map": "/browserFingerprint/static/css/main.073c9b0a.css.map",
+    "main.92482f69.js.map": "/browserFingerprint/static/js/main.92482f69.js.map",
+    "787.28cb0dcd.chunk.js.map": "/browserFingerprint/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.19501212.js"
+    "static/js/main.92482f69.js"
   ]
 }
