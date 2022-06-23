@@ -1,23 +1,46 @@
 import logo from './logo.svg';
 import './App.css';
+import {sha256} from 'crypto-hash';
 
 function App() {
+
+  const fpPromise = import('https://openfpcdn.io/fingerprintjs/v3')
+      .then(FingerprintJS => FingerprintJS.load())
+
+    const useragent = navigator.userAgent
+
+    var mainObj = {}
+    
+   
+  const hash = async(str) =>{
+    const print = await sha256(str)
+    console.log(print)
+  }
+  
+  
+  
+    fpPromise
+      .then(fp => fp.get())
+      .then(result => {
+        // This is the visitor identifier:
+        const visitorId = result.visitorId
+        console.log(result)
+        mainObj["timeZone"] = result.components.timezone.value
+        mainObj["userAgent"] = useragent
+        mainObj["canvas"] = result.components.canvas.value
+        mainObj["screenRes"] = result.components.screenResolution.value
+        mainObj["plugins"] = result.components.plugins.value
+        mainObj["fontsJS"] = result.components.fonts.value
+        mainObj["deviceMemory"] = result.components.deviceMemory.value
+        // console.log(result.components.sessionStorage)
+        // console.log(mainObj)
+        // console.log(JSON.stringify(mainObj))
+        hash(JSON.stringify(mainObj))
+      })
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      TEst
     </div>
   );
 }
