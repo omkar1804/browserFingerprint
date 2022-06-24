@@ -52,9 +52,11 @@ function App() {
               mainObj["plugins"] = result.components.plugins.value
               mainObj["fontsJS"] = result.components.fonts.value
               mainObj["deviceMemory"] = result.components.deviceMemory.value
+              mainObj["platform"] = result.components.platform.value
               // console.log(result.components.sessionStorage)
               // console.log(mainObj)
               // console.log(JSON.stringify(mainObj))
+              console.log(mainObj)
               hash(JSON.stringify(mainObj))
             });
     }, []);
